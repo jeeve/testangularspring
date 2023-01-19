@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DepartementService } from 'src/app/services/departement.service';
 
 @Component({
-  selector: 'app-liste',
+  selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
