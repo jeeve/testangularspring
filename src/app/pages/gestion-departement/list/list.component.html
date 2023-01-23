@@ -1,1 +1,12 @@
-<p>list works!</p>
+<div class="table">
+    <div class="table-header">
+        <th>ID</th>
+        <th>Nom département</th>
+    </div>
+    <div class="table-body">
+        <tr *ngFor="let d of departements">
+            <td>{{d.id}}</td>
+            <td>{{d.departementName}}</td>
+        </tr> 
+    </div>        
+</div>
