@@ -1,9 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { GestionDepartementRoutingModule } from './gestion-departement-routing.module';
 import { GestionDepartementComponent } from './gestion-departement.component';
 import { ListComponent } from './list/list.component';
+
 
 @NgModule({
   declarations: [
@@ -13,6 +14,6 @@ import { ListComponent } from './list/list.component';
   imports: [
     CommonModule,
     GestionDepartementRoutingModule
-  ],
+  ]
 })
 export class GestionDepartementModule { }

@@ -11,15 +11,15 @@ const routes: Routes = [
         path: 'departements',
         loadChildren: () =>
           import(
-            './gestion-departement/gestion-departement-routing.module'
-          ).then((m) => m.GestionDepartementRoutingModule),
+            './gestion-departement/gestion-departement.module'
+          ).then((m) => m.GestionDepartementModule),
       },
       {
         path: 'employes',
         loadChildren: () =>
           import(
-            './gestion-employe/gestion-employe-routing.module'
-          ).then((m) => m.GestionEmployeRoutingModule),
+            './gestion-employe/gestion-employe.module'
+          ).then((m) => m.GestionEmployeModule),
       }
     ],
   },
