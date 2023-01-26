@@ -7,17 +7,15 @@ import { DepartementService } from 'src/app/services/departement.service';
   templateUrl: './add.component.html',
   styleUrls: ['./add.component.css']
 })
-export class AddComponent implements OnInit {
+export class AddComponent {
 
   submitted = false; 
-  departForm!: FormGroup;
+  
+  departForm = this.fb.group({
+    departementName: ['', Validators.required]
+  });
 
-  constructor(private fb : FormBuilder, private deptService: DepartementService) { }
-
-  ngOnInit(): void {
-    this.departForm = this.fb.group({
-      departementName: ['', Validators.required]
-    })
+  constructor(private fb : FormBuilder, private deptService: DepartementService) { 
   }
 
   get f() {

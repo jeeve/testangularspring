@@ -1,10 +1,10 @@
 <form [formGroup]="departForm" (ngSubmit)="submit()">
     <div class="form-group">
         <label for="departement">Nom département</label>
-        <input [ngClass]="{'is-invalid': submitted && f.departementName.errors}" type="text" id="departement" formControlName="departementName"  class="form-control">
+        <input [ngClass]="{'is-invalid': submitted && f.departementName.errors}" type="text" id="departement" formControlName="departementName" class="form-control">
     </div>    
-    <div *ngIf="f.departementName.errors" class="invalid-feedback">
-        <div *ngIf="f.departementName.errors.required">
+    <div *ngIf="f.departementName.hasError('required')" class="invalid-feedback">
+        <div *ngIf="f.departementName?.hasError('required')">-->
             <i>nom obligatoire</i>
         </div>
     </div>

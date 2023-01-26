@@ -5,7 +5,7 @@ import { GestionDepartementRoutingModule } from './gestion-departement-routing.m
 import { GestionDepartementComponent } from './gestion-departement.component';
 import { ListComponent } from './list/list.component';
 import { AddComponent } from './add/add.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    GestionDepartementRoutingModule, ReactiveFormsModule, FormsModule
+    GestionDepartementRoutingModule, ReactiveFormsModule
   ]
 })
 export class GestionDepartementModule { }
